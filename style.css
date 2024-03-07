@@ -102,20 +102,50 @@ p {
 @media (max-width: 500px){
     body {
         background-image: url('./images/bg-mobile.svg');
-        background-size: cover;
-        width: 100vw;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 0% 0%;
+    }
+    h1 {
+        font-size: 1.75rem;
+        padding: 0 2.5rem;
+        font-weight: 500;
+    }
+    p {
+        padding: 0 1.7rem;
+    }
+    button {
+        width: 60%;
+        height: 3rem;
+        font-size: 0.875rem;
+    }
+    .logo {
+        width: 8rem;
+        padding: 1.15rem 2.5rem;
+        margin: 0;
     }
     .container {
+        width: 100%;
         display: flex;
         flex-direction: column;
         padding: 0;
-    }
-    .img-section {
-        width: 100%;
-        padding: 0;
+        text-align: center;
     }
     .intro-section {
         width: 100%;
-        padding: 0;
+        padding: 1rem 0;
+    }
+    .img-section {
+        width: 100%;
+        padding: 1rem 0;
+        margin-top: 1rem;
+    }
+    .img-section img {
+        width: 80%;
+        height: 80%;
+    }
+    .social {
+        position: relative;
+        top: 5rem;
     }
 }
